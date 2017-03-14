@@ -2685,4 +2685,11 @@
 	?>
 	<div id="main" class="<?php echo $main_class; ?>" style="overflow:hidden !important;<?php echo $main_css; ?>">
 		<div class="avada-row" style="<?php echo $row_css; ?>">
+			<?php if ( is_active_sidebar( 'top_widgets_1' ) ) : ?>
+				<div id="primary-top" class="primary-top widget-area" role="complementary">
+					<?php dynamic_sidebar( 'top_widgets_1' ); ?>
+				</div><!-- #primary-sidebar -->
+			<?php endif; ?>
 			<?php wp_reset_query(); ?>
+			
+			
