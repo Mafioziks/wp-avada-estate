@@ -6,3 +6,69 @@ Template: Avada
 */
 
 @import url("../Avada/style.css");
+
+#estate-search {
+	padding: 20px;
+	border: 1px solid rgba(97,95,97,0.42);
+	border-radius: 5px;
+	margin: 10px 0px;
+	background-color: #f4f4f4;
+}
+
+#estate-search .column {
+	display: inline-block;
+	width: 33%;
+}
+
+#estate-search input[type="number"] {
+	width: 5em;
+}
+
+#estate-search label.field-title{
+	margin-top: 5px;
+	display: block;
+}
+
+#estate-search label, #estate-search input {
+	padding-right: 1em;
+}
+
+#estate-search input[type="submit"] {
+	display: inline-block;
+	border: 1px solid #e29a14;
+	border-radius: 3px;
+	background-color: #ffb732;
+	width: 20%;
+	height: 3em;
+	font-size: 1.5em;
+	position: relative;
+	right: 0px;
+	float: right;
+	color: white;
+	font-weight: bold;
+}
+
+.clear {
+	claer: both;
+}
+
+input[type="submit"]:hover {
+	cursor: pointer;
+}
+
+#estate-search input[type="text"], #estate-search input[type="number"]{
+	border: 1px solid rgba(97,95,97,0.42);
+	border-radius: 3px;
+	font-size: 1.2em;
+	padding: 3px;
+	box-shadow: inset 3px 4px 3px -1px rgba(97,95,97,0.42);
+	-webkit-box-shadow: inset 3px 4px 3px -1px rgba(97,95,97,0.42);
+	-moz-box-shadow: inset 3px 4px 3px -1px rgba(97,95,97,0.42);
+}
+
+#estate-search option #estate-search select{
+	border: 1px solid rgba(97,95,97,0.42);
+	border-radius: 3px;
+	font-size: 1.2em;
+	padding: 3px;
+}
