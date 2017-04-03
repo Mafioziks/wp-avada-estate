@@ -31,3 +31,9 @@ function template_chooser($template)
 	return $template;
 }
 add_filter('template_include', 'template_chooser');
+
+function add_search_script() {
+	wp_enqueue_script( 'search-estate', get_stylesheet_directory_uri() . '/js/search.js', array('jquery'), '1.0.0', true );
+}
+
+add_action('wp_enqueue_scripts', 'add_search_script');

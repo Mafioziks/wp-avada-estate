@@ -2430,8 +2430,7 @@
 			</div>
 		</div>
 	</div>
-	<?php endif; ?>
-	<?php if(is_home() && !is_front_page() && get_post_meta($slider_page_id, 'pyre_page_title', true) == 'yes'): ?>
+	<?php elseif(is_home() && !is_front_page() && get_post_meta($slider_page_id, 'pyre_page_title', true) == 'yes'): ?>
 	<div class="page-title-container">
 		<div class="page-title">
 			<div class="page-title-wrapper">
@@ -2448,8 +2447,7 @@
 			</div>
 		</div>
 	</div>
-	<?php endif; ?>
-	<?php if(is_search()): ?>
+	<?php elseif(is_search()): ?>
 	<div class="page-title-container">
 		<div class="page-title">
 			<div class="page-title-wrapper">
@@ -2464,8 +2462,7 @@
 			</div>
 		</div>
 	</div>
-	<?php endif; ?>
-	<?php if(is_404()): ?>
+	<?php elseif(is_404()): ?>
 	<div class="page-title-container">
 		<div class="page-title">
 			<div class="page-title-wrapper">
@@ -2473,8 +2470,7 @@
 			</div>
 		</div>
 	</div>
-	<?php endif; ?>
-	<?php if(is_archive() && !is_woocommerce()): ?>
+	<?php elseif(is_archive() && !is_woocommerce()): ?>
 	<div class="page-title-container">
 		<div class="page-title">
 			<div class="page-title-wrapper">
