@@ -1,10 +1,15 @@
-var region = jQuery('#region select');
+setOnChange('#region', '#residental', 'Rīga');
+setOnChange('#estate_type', '#estate_serie', 'Dzīvoklis');
 
-region.on('change', function () {
-	if (jQuery(this).val() == 'Riga') {
-		jQuery('#residental').css({'display': 'block'});
-	} else {
-		jQuery('#residental').css({'display': 'none'});
-		jQuery('#residental select')[0].selectedIndex = 0;
-	}
-});
+function setOnChange(source, target, showFor) {
+	var s = jQuery(source).children('select');
+
+	s.on('change', function () {
+		if (jQuery(this).val() == showFor) {
+			jQuery(target).css({'display': 'block'});
+		} else {
+			jQuery(target).css({'display': 'none'});
+			jQuery(target).children('select')[0].selectedIndex = 0;
+		}
+	});
+}
