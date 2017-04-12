@@ -72,3 +72,29 @@ input[type="submit"]:hover {
 	font-size: 1.2em;
 	padding: 3px;
 }
+
+.entry-data {
+	border: 1px solid rgba(97,95,97,0.42);
+	background-color: #f9e2b1;
+	padding: 10px;
+	margin: 5px 0px;
+}
+
+.entry-data > span {
+	display: inline-block;
+	padding: 0px 10px;
+}
+
+.entry-value {
+	font-weight: bold;
+	display: block;
+	text-align: center;
+	font-size: 12pt;
+}
+
+.entry-description {
+	display: block;
+	text-align: center;
+	fonct-size: 10pt;
+	font-style: italic;
+}
